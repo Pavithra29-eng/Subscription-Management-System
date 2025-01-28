@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings - Subscription Manager</title>
+    <link rel="stylesheet" href="css/setting.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="light-mode">
+
+    <div class="settings-container">
+        <!-- Settings Header -->
+        <header class="settings-header">
+            <h1>Account Settings</h1>
+        </header>
+
+        <!-- Account Settings -->
+        <div class="account-settings">
+            <h2>Account Information</h2>
+            <form id="account-form">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" value="user@example.com" required>
+                <label for="password">Password</label>
+                <input type="password" id="password" value="********" required>
+                <button type="submit">Save Changes</button>
+        
+            </form>
+        </div>
+
+        <!-- Notification Settings -->
+        <div class="notification-settings">
+            <h2>Notification Preferences</h2>
+            <form id="notification-form">
+                <label for="email-notifications">
+                    <input type="checkbox" id="email-notifications" checked> Receive Email Notifications
+                </label>
+                <label for="sms-notifications">
+                    <input type="checkbox" id="sms-notifications"> Receive SMS Notifications
+                </label>
+                <button type="submit">Save Preferences</button>
+            </form>
+        </div>
+
+        <!-- Subscription Preferences -->
+        <div class="subscription-preferences">
+            <h2>Subscription Preferences</h2>
+            <form id="subscription-form">
+                <label for="auto-renew">
+                    <input type="checkbox" id="auto-renew" checked> Enable Auto-Renew for Subscriptions
+                </label>
+                <button type="submit">Save Preferences</button>
+            </form>
+        </div>
+
+            <!-- Security Settings -->
+    <div class="security-settings">
+        <h2>Security Settings</h2>
+        <form id="security-form">
+            <label for="two-factor">
+                <input type="checkbox" id="two-factor"> Enable Two-Factor Authentication
+            </label>
+            <button type="submit">Save Settings</button>
+            <button id="logout-btn">Log Out</button>
+
+        </form>
+    </div>
+</div>
+
+<script src="js/settings.js"></script>
+</body>
+</html>

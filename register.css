@@ -1,0 +1,128 @@
+/* General Styles for Registration (Dark Mode) */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #121212; /* Dark background for dark mode */
+    color: #fff; /* Light text for dark mode */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Form Container (Modified to be smaller) */
+.register-container {
+    width: 100%;
+    max-width: 350px; /* Reduced the max width */
+    margin: auto;
+    background-color: #1f1f1f; /* Slightly lighter dark background */
+    padding: 30px; /* Reduced padding */
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Login Here link styling */
+.login-link {
+    color: #4db8ff; /* Light Blue color */
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.login-link:hover {
+    color: #d51212; /* Darker shade on hover */
+}
+
+/* Title */
+h2 {
+    text-align: center;
+    color: #ffffff;
+    font-size: 22px; /* Reduced font size */
+    margin-bottom: 15px; /* Reduced margin */
+}
+
+/* Input Fields */
+.input-container {
+    margin-bottom: 15px; /* Reduced margin */
+    position: relative;
+}
+
+input[type="text"], input[type="email"], input[type="password"] {
+    width: 100%;
+    padding: 12px; /* Reduced padding */
+    font-size: 14px; /* Reduced font size */
+    border: 1px solid #444;
+    border-radius: 8px;
+    background-color: #2a2a2a; /* Dark input background */
+    color: white;
+    transition: border-color 0.3s ease;
+}
+
+input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Submit Button */
+.submit-btn {
+    width: 100%;
+    padding: 12px; /* Reduced padding */
+    background-color: #007bff;
+    color: white;
+    font-size: 14px; /* Reduced font size */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 15px; /* Reduced margin */
+}
+
+.submit-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Social Buttons - Horizontal Layout */
+.social-buttons {
+    display: flex; /* Flexbox layout */
+    justify-content: space-between; /* Distribute buttons evenly */
+    margin-top: 20px;
+}
+
+.social-buttons a {
+    width: 30%; /* Make each button take up 30% of the width */
+    padding: 12px; /* Reduced padding */
+    text-align: center;
+    background-color: #3b5998; /* Facebook Color */
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.social-buttons a.google {
+    background-color: #db4437; /* Google Color */
+}
+
+.social-buttons a.github {
+    background-color: #333; /* GitHub Color */
+}
+
+.social-buttons a:hover {
+    background-color: #0056b3;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .register-container {
+        padding: 25px; /* Adjusted padding for smaller screens */
+    }
+    h2 {
+        font-size: 20px; /* Adjusted font size */
+    }
+
+    .social-buttons a {
+        width: 48%; /* Adjusted width for smaller screens */
+    }
+}
