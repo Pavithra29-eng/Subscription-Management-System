@@ -43,8 +43,15 @@ The **Subscription Management System** is a comprehensive, web-based application
 - **Centralized Subscription Management**: Users no longer need to keep track of multiple subscriptions manually. This system helps them manage everything in one place.
 - **User-Friendly Interface**: The system’s design and functionality prioritize ease of use, ensuring that users, regardless of technical experience, can manage their subscriptions effectively.
 
+## Setup Instructions
+### Prerequisites:
+- PHP (7.0 or above)
+- MySQL database
 
----
+-------------
+
+
+
 
 
 
